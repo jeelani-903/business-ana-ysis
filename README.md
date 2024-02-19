@@ -1,1 +1,1 @@
-# business-ana-ysis
+# business-analysis
