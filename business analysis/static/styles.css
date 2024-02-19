@@ -1,0 +1,72 @@
+/* CSS styles for the header */
+.header {
+    text-align: center;
+    background-color: #3498db;
+    padding: 20px 0;
+    animation: fadeInUp 1s ease; /* Add animation */
+}
+
+.header-title {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Define the fadeInUp animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CSS styles for sections */
+.section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* CSS styles for the dropdown menu */
+.dropdown {
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+}
+
+/* Style the dropdown options */
+.dropdown select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3498db; /* Text color for the selected option */
+}
+
+/* Style the dropdown arrow */
+.dropdown select::after {
+    content: "\25BC"; /* Unicode down arrow character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #3498db; /* Arrow color */
+}

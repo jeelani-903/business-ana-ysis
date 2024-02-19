@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Data Visualization</title>
+
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Include your custom script -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <!-- Scatter Plot with Annotations -->
+    <div>
+        <h1>Overall Performance by City (Scatter Plot with Annotations)</h1>
+        <div id="scatter_plot"></div>
+    </div>
+    <div>
+        <h1>Individual Company Performance</h1>
+        <!-- Dropdown menu for selecting companies -->
+        <select id="company_dropdown" onchange="updateIndividualCompanyPerformance()">
+            {% for company in companies %}
+                <option value="{{ company }}" {% if company == selected_company %}selected{% endif %}>{{ company }}</option>
+            {% endfor %}
+        </select>
+        <!-- Year range selection for individual performance -->
+        <label for="start_year">Start Year:</label>
+        <select id="start_year">
+            {% for year in available_years %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
+        <label for="end_year">End Year:</label>
+        <select id="end_year">
+            {% for year in available_years %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
+        <!-- Graph for individual company performance -->
+        <div id="individual_company"></div>
+    </div>
+
+    <!-- Line Graph for Total Sales by Year -->
+    <div>
+        <h1>Total Sales by Year (Line Graph)</h1>
+        <!-- Year range selection for total sales -->
+        <label for="total_sales_start_year">Start Year:</label>
+        <select id="total_sales_start_year">
+            {% for year in available_years %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
+        <label for="total_sales_end_year">End Year:</label>
+        <select id="total_sales_end_year">
+            {% for year in available_years %}
+                <option value="{{ year }}">{{ year }}</option>
+            {% endfor %}
+        </select>
+        <div id="sales_by_year"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Entry_Date,city,Group,Invoice Number,Transaction Head,Trade,Brand,Quality,Quantity,Rate,Grade,Season Head,Company,Area,Amount of Sales
+01-01-2022,New York,Apparel,INV2022001,Sales,Clothing,XYZ Textiles,Premium,1000,25,A,Winter,ABC Inc.,North,25000
+15-01-2022,New York,Home Textiles,INV2022002, Sales,Clothing,ABC Fabrics,Standard,1000,100,C,Autumn,DEF PVT,West,30000
+15-01-2020,America,Apparel,INV2022003,Sales,Bedding,LMN Textiles,Basic,1000,1000,B,Summer,ZZZ PVT,South,3000
+15-01-2022,Los Angeles,Home Textiles,INV2022004,Sales,Clothing,ABC Fabrics,Standard,1000,2000,C,Spring,AAA PVT,East,50000
+15-01-2022,Los Angeles,Home Textiles,INV2022005,Sales,Bedding,ABC Textiles,Premium,1000,500,B,Winter,BBB PVT,East,23000
+15-01-2022,America,Apparel,INV2022006,Sales,Clothing,XYZ Textiles,Basic,1000,600,A,Autumn,AAA PVT,West,35000
+15-01-2019,New York,Apparel,INV2022007,Sales,Clothing,LMN Textiles,Premium,1000,3000,B,Summer,CCC PVT,North,40000
+15-01-2022,America,Apparel,INV2022008,Sales,Bedding,ABC Fabrics,Standard,1000,4000,C,Spring,ABC Inc.,South,12000
+15-01-2021,Los Angeles,Home Textiles,INV2022009,Sales,Bedding,ABC Textiles,Basic,1000,1500,A,Autumn,DEF PVT,West,60000
